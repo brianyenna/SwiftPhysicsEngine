@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A79B0E0240A726300F3E5AA /* SwiftPhysicsEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A79B0D6240A726300F3E5AA /* SwiftPhysicsEngine.framework */; };
+		8A79B0E5240A726300F3E5AA /* SwiftPhysicsEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79B0E4240A726300F3E5AA /* SwiftPhysicsEngineTests.swift */; };
+		8A79B0E7240A726300F3E5AA /* SwiftPhysicsEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A79B0D9240A726300F3E5AA /* SwiftPhysicsEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A79B0F8240A727D00F3E5AA /* PhysicsEngine2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79B0F0240A727D00F3E5AA /* PhysicsEngine2D.swift */; };
+		8A79B0F9240A727D00F3E5AA /* PhysicsEngine2D+checkCollision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79B0F1240A727D00F3E5AA /* PhysicsEngine2D+checkCollision.swift */; };
+		8A79B0FA240A727D00F3E5AA /* TriangularPhysicalObject2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79B0F2240A727D00F3E5AA /* TriangularPhysicalObject2D.swift */; };
+		8A79B0FB240A727D00F3E5AA /* RotatablePhysicalObject2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79B0F3240A727D00F3E5AA /* RotatablePhysicalObject2D.swift */; };
+		8A79B0FC240A727D00F3E5AA /* PhysicalObject2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79B0F4240A727D00F3E5AA /* PhysicalObject2D.swift */; };
+		8A79B0FD240A727D00F3E5AA /* Vector2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79B0F5240A727D00F3E5AA /* Vector2D.swift */; };
+		8A79B0FE240A727D00F3E5AA /* RectangularPhysicalObject2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79B0F6240A727D00F3E5AA /* RectangularPhysicalObject2D.swift */; };
+		8A79B0FF240A727D00F3E5AA /* CircularPhysicalObject2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79B0F7240A727D00F3E5AA /* CircularPhysicalObject2D.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A79B0E1240A726300F3E5AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A79B0CD240A726300F3E5AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A79B0D5240A726300F3E5AA;
+			remoteInfo = SwiftPhysicsEngine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8A79B0D6240A726300F3E5AA /* SwiftPhysicsEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPhysicsEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A79B0D9240A726300F3E5AA /* SwiftPhysicsEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftPhysicsEngine.h; sourceTree = "<group>"; };
+		8A79B0DA240A726300F3E5AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A79B0DF240A726300F3E5AA /* SwiftPhysicsEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPhysicsEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A79B0E4240A726300F3E5AA /* SwiftPhysicsEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPhysicsEngineTests.swift; sourceTree = "<group>"; };
+		8A79B0E6240A726300F3E5AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A79B0F0240A727D00F3E5AA /* PhysicsEngine2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsEngine2D.swift; sourceTree = "<group>"; };
+		8A79B0F1240A727D00F3E5AA /* PhysicsEngine2D+checkCollision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhysicsEngine2D+checkCollision.swift"; sourceTree = "<group>"; };
+		8A79B0F2240A727D00F3E5AA /* TriangularPhysicalObject2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangularPhysicalObject2D.swift; sourceTree = "<group>"; };
+		8A79B0F3240A727D00F3E5AA /* RotatablePhysicalObject2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotatablePhysicalObject2D.swift; sourceTree = "<group>"; };
+		8A79B0F4240A727D00F3E5AA /* PhysicalObject2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicalObject2D.swift; sourceTree = "<group>"; };
+		8A79B0F5240A727D00F3E5AA /* Vector2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector2D.swift; sourceTree = "<group>"; };
+		8A79B0F6240A727D00F3E5AA /* RectangularPhysicalObject2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangularPhysicalObject2D.swift; sourceTree = "<group>"; };
+		8A79B0F7240A727D00F3E5AA /* CircularPhysicalObject2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularPhysicalObject2D.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A79B0D3240A726300F3E5AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A79B0DC240A726300F3E5AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A79B0E0240A726300F3E5AA /* SwiftPhysicsEngine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A79B0CC240A726300F3E5AA = {
+			isa = PBXGroup;
+			children = (
+				8A79B0D8240A726300F3E5AA /* SwiftPhysicsEngine */,
+				8A79B0E3240A726300F3E5AA /* SwiftPhysicsEngineTests */,
+				8A79B0D7240A726300F3E5AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A79B0D7240A726300F3E5AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A79B0D6240A726300F3E5AA /* SwiftPhysicsEngine.framework */,
+				8A79B0DF240A726300F3E5AA /* SwiftPhysicsEngineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A79B0D8240A726300F3E5AA /* SwiftPhysicsEngine */ = {
+			isa = PBXGroup;
+			children = (
+				8A79B0F7240A727D00F3E5AA /* CircularPhysicalObject2D.swift */,
+				8A79B0F4240A727D00F3E5AA /* PhysicalObject2D.swift */,
+				8A79B0F0240A727D00F3E5AA /* PhysicsEngine2D.swift */,
+				8A79B0F1240A727D00F3E5AA /* PhysicsEngine2D+checkCollision.swift */,
+				8A79B0F6240A727D00F3E5AA /* RectangularPhysicalObject2D.swift */,
+				8A79B0F3240A727D00F3E5AA /* RotatablePhysicalObject2D.swift */,
+				8A79B0F2240A727D00F3E5AA /* TriangularPhysicalObject2D.swift */,
+				8A79B0F5240A727D00F3E5AA /* Vector2D.swift */,
+				8A79B0D9240A726300F3E5AA /* SwiftPhysicsEngine.h */,
+				8A79B0DA240A726300F3E5AA /* Info.plist */,
+			);
+			path = SwiftPhysicsEngine;
+			sourceTree = "<group>";
+		};
+		8A79B0E3240A726300F3E5AA /* SwiftPhysicsEngineTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A79B0E4240A726300F3E5AA /* SwiftPhysicsEngineTests.swift */,
+				8A79B0E6240A726300F3E5AA /* Info.plist */,
+			);
+			path = SwiftPhysicsEngineTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8A79B0D1240A726300F3E5AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A79B0E7240A726300F3E5AA /* SwiftPhysicsEngine.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8A79B0D5240A726300F3E5AA /* SwiftPhysicsEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A79B0EA240A726300F3E5AA /* Build configuration list for PBXNativeTarget "SwiftPhysicsEngine" */;
+			buildPhases = (
+				8A79B0D1240A726300F3E5AA /* Headers */,
+				8A79B0D2240A726300F3E5AA /* Sources */,
+				8A79B0D3240A726300F3E5AA /* Frameworks */,
+				8A79B0D4240A726300F3E5AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftPhysicsEngine;
+			productName = SwiftPhysicsEngine;
+			productReference = 8A79B0D6240A726300F3E5AA /* SwiftPhysicsEngine.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8A79B0DE240A726300F3E5AA /* SwiftPhysicsEngineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A79B0ED240A726300F3E5AA /* Build configuration list for PBXNativeTarget "SwiftPhysicsEngineTests" */;
+			buildPhases = (
+				8A79B0DB240A726300F3E5AA /* Sources */,
+				8A79B0DC240A726300F3E5AA /* Frameworks */,
+				8A79B0DD240A726300F3E5AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A79B0E2240A726300F3E5AA /* PBXTargetDependency */,
+			);
+			name = SwiftPhysicsEngineTests;
+			productName = SwiftPhysicsEngineTests;
+			productReference = 8A79B0DF240A726300F3E5AA /* SwiftPhysicsEngineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A79B0CD240A726300F3E5AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Brian Yen";
+				TargetAttributes = {
+					8A79B0D5240A726300F3E5AA = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+					8A79B0DE240A726300F3E5AA = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 8A79B0D0240A726300F3E5AA /* Build configuration list for PBXProject "SwiftPhysicsEngine" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A79B0CC240A726300F3E5AA;
+			productRefGroup = 8A79B0D7240A726300F3E5AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A79B0D5240A726300F3E5AA /* SwiftPhysicsEngine */,
+				8A79B0DE240A726300F3E5AA /* SwiftPhysicsEngineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A79B0D4240A726300F3E5AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A79B0DD240A726300F3E5AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A79B0D2240A726300F3E5AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A79B0FF240A727D00F3E5AA /* CircularPhysicalObject2D.swift in Sources */,
+				8A79B0F8240A727D00F3E5AA /* PhysicsEngine2D.swift in Sources */,
+				8A79B0F9240A727D00F3E5AA /* PhysicsEngine2D+checkCollision.swift in Sources */,
+				8A79B0FB240A727D00F3E5AA /* RotatablePhysicalObject2D.swift in Sources */,
+				8A79B0FA240A727D00F3E5AA /* TriangularPhysicalObject2D.swift in Sources */,
+				8A79B0FE240A727D00F3E5AA /* RectangularPhysicalObject2D.swift in Sources */,
+				8A79B0FD240A727D00F3E5AA /* Vector2D.swift in Sources */,
+				8A79B0FC240A727D00F3E5AA /* PhysicalObject2D.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A79B0DB240A726300F3E5AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A79B0E5240A726300F3E5AA /* SwiftPhysicsEngineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A79B0E2240A726300F3E5AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A79B0D5240A726300F3E5AA /* SwiftPhysicsEngine */;
+			targetProxy = 8A79B0E1240A726300F3E5AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8A79B0E8240A726300F3E5AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8A79B0E9240A726300F3E5AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8A79B0EB240A726300F3E5AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5SMQW2H6BP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SwiftPhysicsEngine/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BrianYen.SwiftPhysicsEngine;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A79B0EC240A726300F3E5AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5SMQW2H6BP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SwiftPhysicsEngine/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BrianYen.SwiftPhysicsEngine;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8A79B0EE240A726300F3E5AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5SMQW2H6BP;
+				INFOPLIST_FILE = SwiftPhysicsEngineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BrianYen.SwiftPhysicsEngineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A79B0EF240A726300F3E5AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5SMQW2H6BP;
+				INFOPLIST_FILE = SwiftPhysicsEngineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BrianYen.SwiftPhysicsEngineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A79B0D0240A726300F3E5AA /* Build configuration list for PBXProject "SwiftPhysicsEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A79B0E8240A726300F3E5AA /* Debug */,
+				8A79B0E9240A726300F3E5AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A79B0EA240A726300F3E5AA /* Build configuration list for PBXNativeTarget "SwiftPhysicsEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A79B0EB240A726300F3E5AA /* Debug */,
+				8A79B0EC240A726300F3E5AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A79B0ED240A726300F3E5AA /* Build configuration list for PBXNativeTarget "SwiftPhysicsEngineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A79B0EE240A726300F3E5AA /* Debug */,
+				8A79B0EF240A726300F3E5AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A79B0CD240A726300F3E5AA /* Project object */;
+}
