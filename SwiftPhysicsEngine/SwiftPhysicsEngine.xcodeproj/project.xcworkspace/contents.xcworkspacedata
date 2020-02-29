@@ -2,6 +2,37 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SwiftPhysicsEngine.xcodeproj">
+      location = "group:../SwiftPhysicsEngineTests/Info.plist">
+   </FileRef>
+   <FileRef
+      location = "group:../SwiftPhysicsEngineTests/PhyicsEngineTests+updatingCollisions.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../SwiftPhysicsEngineTests/PhysicsEngineTests.swift">
+   </FileRef>
+   <Group
+      location = "group:../SwiftPhysicsEngineTests/TestObjects"
+      name = "TestObjects">
+      <FileRef
+         location = "group:TestTriangle.swift">
+      </FileRef>
+      <FileRef
+         location = "group:TestRotatable.swift">
+      </FileRef>
+      <FileRef
+         location = "group:TestRectangle.swift">
+      </FileRef>
+      <FileRef
+         location = "group:TestCircle.swift">
+      </FileRef>
+      <FileRef
+         location = "group:TestPhysicalObject.swift">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:../SwiftPhysicsEngineTests/Vector2DTests.swift">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

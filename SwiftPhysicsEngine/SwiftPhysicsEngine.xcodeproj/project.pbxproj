@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8A79B0E0240A726300F3E5AA /* SwiftPhysicsEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A79B0D6240A726300F3E5AA /* SwiftPhysicsEngine.framework */; };
-		8A79B0E5240A726300F3E5AA /* SwiftPhysicsEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79B0E4240A726300F3E5AA /* SwiftPhysicsEngineTests.swift */; };
 		8A79B0E7240A726300F3E5AA /* SwiftPhysicsEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A79B0D9240A726300F3E5AA /* SwiftPhysicsEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A79B0F8240A727D00F3E5AA /* PhysicsEngine2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79B0F0240A727D00F3E5AA /* PhysicsEngine2D.swift */; };
 		8A79B0F9240A727D00F3E5AA /* PhysicsEngine2D+checkCollision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79B0F1240A727D00F3E5AA /* PhysicsEngine2D+checkCollision.swift */; };
@@ -18,6 +17,15 @@
 		8A79B0FD240A727D00F3E5AA /* Vector2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79B0F5240A727D00F3E5AA /* Vector2D.swift */; };
 		8A79B0FE240A727D00F3E5AA /* RectangularPhysicalObject2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79B0F6240A727D00F3E5AA /* RectangularPhysicalObject2D.swift */; };
 		8A79B0FF240A727D00F3E5AA /* CircularPhysicalObject2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79B0F7240A727D00F3E5AA /* CircularPhysicalObject2D.swift */; };
+		8A79B101240A762100F3E5AA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79B100240A762100F3E5AA /* Utils.swift */; };
+		8A79B10B240A77E500F3E5AA /* TestTriangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79B103240A77E400F3E5AA /* TestTriangle.swift */; };
+		8A79B10C240A77E500F3E5AA /* TestRotatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79B104240A77E400F3E5AA /* TestRotatable.swift */; };
+		8A79B10D240A77E500F3E5AA /* TestRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79B105240A77E400F3E5AA /* TestRectangle.swift */; };
+		8A79B10E240A77E500F3E5AA /* TestCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79B106240A77E400F3E5AA /* TestCircle.swift */; };
+		8A79B10F240A77E500F3E5AA /* TestPhysicalObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79B107240A77E400F3E5AA /* TestPhysicalObject.swift */; };
+		8A79B110240A77E500F3E5AA /* PhysicsEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79B108240A77E400F3E5AA /* PhysicsEngineTests.swift */; };
+		8A79B111240A77E500F3E5AA /* PhyicsEngineTests+updatingCollisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79B109240A77E500F3E5AA /* PhyicsEngineTests+updatingCollisions.swift */; };
+		8A79B112240A77E500F3E5AA /* Vector2DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79B10A240A77E500F3E5AA /* Vector2DTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +43,6 @@
 		8A79B0D9240A726300F3E5AA /* SwiftPhysicsEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftPhysicsEngine.h; sourceTree = "<group>"; };
 		8A79B0DA240A726300F3E5AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A79B0DF240A726300F3E5AA /* SwiftPhysicsEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPhysicsEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A79B0E4240A726300F3E5AA /* SwiftPhysicsEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPhysicsEngineTests.swift; sourceTree = "<group>"; };
 		8A79B0E6240A726300F3E5AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A79B0F0240A727D00F3E5AA /* PhysicsEngine2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsEngine2D.swift; sourceTree = "<group>"; };
 		8A79B0F1240A727D00F3E5AA /* PhysicsEngine2D+checkCollision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhysicsEngine2D+checkCollision.swift"; sourceTree = "<group>"; };
@@ -45,6 +52,15 @@
 		8A79B0F5240A727D00F3E5AA /* Vector2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector2D.swift; sourceTree = "<group>"; };
 		8A79B0F6240A727D00F3E5AA /* RectangularPhysicalObject2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangularPhysicalObject2D.swift; sourceTree = "<group>"; };
 		8A79B0F7240A727D00F3E5AA /* CircularPhysicalObject2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularPhysicalObject2D.swift; sourceTree = "<group>"; };
+		8A79B100240A762100F3E5AA /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = /Users/brianyen/Desktop/SwiftPhysicsEngine/SwiftPhysicsEngine/SwiftPhysicsEngine/Utils.swift; sourceTree = "<absolute>"; };
+		8A79B103240A77E400F3E5AA /* TestTriangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTriangle.swift; sourceTree = "<group>"; };
+		8A79B104240A77E400F3E5AA /* TestRotatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRotatable.swift; sourceTree = "<group>"; };
+		8A79B105240A77E400F3E5AA /* TestRectangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRectangle.swift; sourceTree = "<group>"; };
+		8A79B106240A77E400F3E5AA /* TestCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCircle.swift; sourceTree = "<group>"; };
+		8A79B107240A77E400F3E5AA /* TestPhysicalObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPhysicalObject.swift; sourceTree = "<group>"; };
+		8A79B108240A77E400F3E5AA /* PhysicsEngineTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsEngineTests.swift; sourceTree = "<group>"; };
+		8A79B109240A77E500F3E5AA /* PhyicsEngineTests+updatingCollisions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhyicsEngineTests+updatingCollisions.swift"; sourceTree = "<group>"; };
+		8A79B10A240A77E500F3E5AA /* Vector2DTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector2DTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +103,7 @@
 		8A79B0D8240A726300F3E5AA /* SwiftPhysicsEngine */ = {
 			isa = PBXGroup;
 			children = (
+				8A79B100240A762100F3E5AA /* Utils.swift */,
 				8A79B0F7240A727D00F3E5AA /* CircularPhysicalObject2D.swift */,
 				8A79B0F4240A727D00F3E5AA /* PhysicalObject2D.swift */,
 				8A79B0F0240A727D00F3E5AA /* PhysicsEngine2D.swift */,
@@ -104,10 +121,25 @@
 		8A79B0E3240A726300F3E5AA /* SwiftPhysicsEngineTests */ = {
 			isa = PBXGroup;
 			children = (
-				8A79B0E4240A726300F3E5AA /* SwiftPhysicsEngineTests.swift */,
 				8A79B0E6240A726300F3E5AA /* Info.plist */,
+				8A79B109240A77E500F3E5AA /* PhyicsEngineTests+updatingCollisions.swift */,
+				8A79B108240A77E400F3E5AA /* PhysicsEngineTests.swift */,
+				8A79B102240A77E400F3E5AA /* TestObjects */,
+				8A79B10A240A77E500F3E5AA /* Vector2DTests.swift */,
 			);
 			path = SwiftPhysicsEngineTests;
+			sourceTree = "<group>";
+		};
+		8A79B102240A77E400F3E5AA /* TestObjects */ = {
+			isa = PBXGroup;
+			children = (
+				8A79B103240A77E400F3E5AA /* TestTriangle.swift */,
+				8A79B104240A77E400F3E5AA /* TestRotatable.swift */,
+				8A79B105240A77E400F3E5AA /* TestRectangle.swift */,
+				8A79B106240A77E400F3E5AA /* TestCircle.swift */,
+				8A79B107240A77E400F3E5AA /* TestPhysicalObject.swift */,
+			);
+			path = TestObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +254,7 @@
 			files = (
 				8A79B0FF240A727D00F3E5AA /* CircularPhysicalObject2D.swift in Sources */,
 				8A79B0F8240A727D00F3E5AA /* PhysicsEngine2D.swift in Sources */,
+				8A79B101240A762100F3E5AA /* Utils.swift in Sources */,
 				8A79B0F9240A727D00F3E5AA /* PhysicsEngine2D+checkCollision.swift in Sources */,
 				8A79B0FB240A727D00F3E5AA /* RotatablePhysicalObject2D.swift in Sources */,
 				8A79B0FA240A727D00F3E5AA /* TriangularPhysicalObject2D.swift in Sources */,
@@ -235,7 +268,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A79B0E5240A726300F3E5AA /* SwiftPhysicsEngineTests.swift in Sources */,
+				8A79B10C240A77E500F3E5AA /* TestRotatable.swift in Sources */,
+				8A79B10E240A77E500F3E5AA /* TestCircle.swift in Sources */,
+				8A79B112240A77E500F3E5AA /* Vector2DTests.swift in Sources */,
+				8A79B111240A77E500F3E5AA /* PhyicsEngineTests+updatingCollisions.swift in Sources */,
+				8A79B10F240A77E500F3E5AA /* TestPhysicalObject.swift in Sources */,
+				8A79B10B240A77E500F3E5AA /* TestTriangle.swift in Sources */,
+				8A79B10D240A77E500F3E5AA /* TestRectangle.swift in Sources */,
+				8A79B110240A77E500F3E5AA /* PhysicsEngineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

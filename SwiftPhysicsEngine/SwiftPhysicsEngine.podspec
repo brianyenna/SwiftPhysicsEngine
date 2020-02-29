@@ -32,12 +32,13 @@ Pod::Spec.new do |spec|
                  :tag => "#{spec.version}" }
 
     # 7
-    # spec.framework = "UIKit"
+    spec.framework = "UIKit"
     # spec.dependency 'Alamofire', '~> 4.7'
     # spec.dependency 'MBProgressHUD', '~> 1.1.0'
 
     # 8
-    spec.source_files = "SwiftPhysicsEngine/**/*.{swift}"
+    # spec.source_files = "SwiftPhysicsEngine/**/*.{swift}"
+    spec.source_files = "SwiftPhysicsEngine/SwiftPhysicsEngine/*.{swift}"
 
     # 9
     # spec.resources = "SwiftPhysicsEngine/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"

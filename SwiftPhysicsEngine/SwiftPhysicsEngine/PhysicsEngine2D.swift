@@ -235,9 +235,9 @@ class PhysicsEngine2D {
     private func getNormalVectorAndMinTranslationVector(movingObj: CircularPhysicalObject2D,
                                                         rectObj: RectangularPhysicalObject2D) -> [Vector2D] {
         // Create CGRects to quickly calculate intersection
-        let movingObjRect = ViewUtils.getCGRectFrameForCircle(xPos: movingObj.position.first,
-                                                              yPos: movingObj.position.second,
-                                                              radius: movingObj.radius)
+        let movingObjRect = Utils.getCGRectFrameForCircle(xPos: movingObj.position.first,
+                                                          yPos: movingObj.position.second,
+                                                          radius: movingObj.radius)
         let rectObjRect = CGRect(x: rectObj.position.first,
                                  y: rectObj.position.second,
                                  width: rectObj.width,

@@ -40,9 +40,9 @@ extension PhysicsEngine2D {
      - Returns: `true` if the objects are colliding, `false` otherwise.
      */
     func checkCollidingObjects(obj1: CircularPhysicalObject2D, obj2: RectangularPhysicalObject2D) -> Bool {
-        let obj1Rect = ViewUtils.getCGRectFrameForCircle(xPos: obj1.position.first,
-                                                         yPos: obj1.position.second,
-                                                         radius: obj1.radius)
+        let obj1Rect = Utils.getCGRectFrameForCircle(xPos: obj1.position.first,
+                                                     yPos: obj1.position.second,
+                                                     radius: obj1.radius)
         let obj2Rect = CGRect(x: obj2.position.first,
                               y: obj2.position.second,
                               width: obj2.width,
